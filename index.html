@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8" />
+	<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+	<title>Document</title>
+	<link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+	<div class="container-principal">
+		<h1 class="title">Pokedex</h1>
+
+		<div data-poke-card class="pokemon-container">
+			<div poke-name class="poke-name"></div>
+			<div poke-img-container class="img-container">
+				<img poke-img class="poke-img" src='not-found.png' />
+			</div>
+			<div poke-id class="poke-id"></div>
+			<div poke-types class="poke-types"></div>
+			<div poke-stats class="poke-stats"></div>
+		</div>
+
+		<form class="poke-form" poke-form action="" onsubmit="buscarPokemon(event)" autocomplete='off'>
+			<input class="search-input" name="pokemon" placeholder="Ingrese un numero" />
+			<button class="search-button" onclick="buscarPokemon(id)">Buscar</button>
+		</form>
+	</div>
+
+
+	<script src="main.js"></script>
+</body>
+
+</html>
